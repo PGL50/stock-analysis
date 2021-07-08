@@ -83,7 +83,7 @@
             End If
         Next j
 ```
-### I used tickerIndex as the looping variable for the outer loop (see above) so in the instructions where it said to increase the tickerIndex, the "Next tickerIndex" code line does that automatically.
+### I used tickerIndex as the looping variable for the outer loop (see above 2a) so in the instructions where it said to increase the tickerIndex, the "Next tickerIndex" code line does that automatically.
 
 ```VB
  For tickerIndex = 0 To 11
@@ -107,3 +107,13 @@ Next tickerIndex
     Next i
 ```
 ### The data were formatted into the Excel spreadsheet with color indicators for percent increase (Green) or decrease (Red). A process time was opened at the beginning of the code and closed at the end of the code and a message popup box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet.
+
+### The run time of the code seems to have gotten faster with the refactoring. 
+
+### Here are the old code run times for 2017 and 2018:
+
+![OutcomeMonths](./Resources/VBA_Challenge_2017_oldcode.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018_oldcode.png)
+
+### Here are the new code run times for 2017 and 2018:
+
+![OutcomeMonths](./Resources/VBA_Challenge_2017.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018.png) 
