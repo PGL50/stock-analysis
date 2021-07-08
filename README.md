@@ -114,6 +114,8 @@ Next tickerIndex
 
 ![OutcomeMonths](./Resources/VBA_Challenge_2017_oldcode.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018_oldcode.png)
 
-### Here are the new code run times for 2017 and 2018:
+### Here are the refactored code run times for 2017 and 2018:
 
 ![OutcomeMonths](./Resources/VBA_Challenge_2017.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018.png) 
+
+### So the refactored code ran 44% faster for 2017 data and 46% faster for 2018 data. These are microscopic amounts of time difference but with a really large data file it could make a big difference in time saved watching the computer spins its wheels.
