@@ -10,7 +10,7 @@
 
 #### The data for these analyses are lists of Stock Tickers with daily values for Open, High, Low, Close, and Volume for 2017 and 2018. Steve wants to get some aggregated data for all stocks to compare the performance of various green stocks. The analyses used refactored code from the Module 2 steps. The performance time between years and code versions is also compared.
 
-### The macro AllStocksAnalysisRefactored() utilized Cell assignments to create the table for the results. The complete VBA code is included VBA_Challenge.vbs file in the GitHub repository. Below are code snippets examples for new techniques and refactoring.
+### The macro AllStocksAnalysisRefactored() utilized Cell assignments to create the table for the results. The complete VBA code is included VBA_Challenge.vbs file in the GitHub repository. Below are code snippets examples for new techniques and refactoring. The first code block used Cells vs Range to create title and headers for the analysis results.
 
 ```VB
     Worksheets("All Stocks Analysis").Activate
@@ -39,6 +39,10 @@
     tickers(9) = "SPWR"
     tickers(10) = "TERP"
     tickers(11) = "VSLR"
+
+    .
+    .
+    .
     
     '1b) Create three output arrays
     Dim tickerVolumes(12) As Long
@@ -46,9 +50,16 @@
     Dim tickerEndingPrices(12) As Single
 ```
 
-### Nested For loops were used to cycle through the rows of Tickers and the columns of daily stack metrics. For the refactored code, the variable "tickerIndex" was used instead of a simple single letter.
+### Nested For loops were used to cycle through the rows of Tickers and the columns of daily stack metrics. For the refactored code, the variable "tickerIndex" was used instead of a simple single letter. 
 
 ```VB
+    '1a) Create a ticker Index and set=0
+    Dim tickerIndex As Integer
+    tickerIndex = 0
+.
+.
+.
+
  '2a) Create a for loop to initialize the tickerVolumes to zero.
     For tickerIndex = 0 To 11
         'Use tickerIndex to reference arrays
@@ -108,7 +119,7 @@ Next tickerIndex
 ```
 ### The data were formatted into the Excel spreadsheet with color indicators for percent increase (Green) or decrease (Red). A process time was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet.
 
-### The refactored code yielded the same results as the original code. 
+### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge code.
 
 | All Stocks (2017) |                    |        |
 |-------------------|--------------------|--------|
@@ -163,7 +174,9 @@ Next tickerIndex
 
 ## Summary
 
-#### The bigget advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses thes can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. 
+### The bigget advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses thes can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. Refactoring in an iterative process is a great learning tool as well. 
 
-### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it.
+### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and take a long time.
+
+### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start agian. 
 
