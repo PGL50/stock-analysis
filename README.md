@@ -159,4 +159,4 @@ Next tickerIndex
 
 ### So what should Steve recommend to his parents? Most of the stocks in 2018 had a negative return. The Return performance was lower in 2018 for all stocks except for RUN and TERP. TERP was slightly better in 2018 but the return was still negative. RUN went from 5.5% return to 84% return. The full performance of all stocks is shown below (2017 in green and 2018 in blue). So Steve may want to recommend RUN stock over DQ stock which dropped from almost 200% return to -63%.
 
-![new2017](./Resources/Returns_Comparison.png)  
+![comparisons](./Resources/Returns_Comparison.png)  
