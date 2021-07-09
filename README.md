@@ -160,3 +160,10 @@ Next tickerIndex
 ### So what should Steve recommend to his parents? Most of the stocks in 2018 had a negative return. The Return performance was lower in 2018 for all stocks except for RUN and TERP. TERP was slightly better in 2018 but the return was still negative. RUN went from 5.5% return to 84% return. The full performance of all stocks is shown below (2017 in green and 2018 in blue). So Steve may want to recommend RUN stock over DQ stock which dropped from almost 200% return to -63%.
 
 ![comparisons](./Resources/Returns_Comparison.png)  
+
+## Summary
+
+#### The bigget advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses thes can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. 
+
+### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it.
+
