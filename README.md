@@ -10,7 +10,7 @@
 
 #### The data for these analyses are lists of Stock Tickers with daily values for Open, High, Low, Close, and Volume for 2017 and 2018. Steve wants to get some aggregated data for all stocks to compare the performance of various green stocks. The analyses used refactored code from the Module 2 steps. The performance time between years and code versions is also compared.
 
-### The macro AllStocksAnalysisRefactored() utilized Cell assignments to create the table for the results.
+### The macro AllStocksAnalysisRefactored() utilized Cell assignments to create the table for the results. The complete VBA code is included VBA_Challenge.vbs file in the GitHub repository. Below are code snippets examples for new techniques and refactoring.
 
 ```VB
     Worksheets("All Stocks Analysis").Activate
@@ -106,16 +106,57 @@ Next tickerIndex
 
     Next i
 ```
-### The data were formatted into the Excel spreadsheet with color indicators for percent increase (Green) or decrease (Red). A process time was opened at the beginning of the code and closed at the end of the code and a message popup box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet.
+### The data were formatted into the Excel spreadsheet with color indicators for percent increase (Green) or decrease (Red). A process time was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet.
+
+### The refactored code yielded the same results as the original code. 
+
+| All Stocks (2017) |                    |        |
+|-------------------|--------------------|--------|
+|                   |                    |        |
+| Ticker            | Total Daily Volume | Return |
+| AY                | 136,070,900        | 8.9%   |
+| CSIQ              | 310,592,800        | 33.1%  |
+| DQ                | 35,796,200         | 199.4% |
+| ENPH              | 221,772,100        | 129.5% |
+| FSLR              | 684,181,400        | 101.3% |
+| HASI              | 80,949,300         | 25.8%  |
+| JKS               | 191,632,200        | 53.9%  |
+| RUN               | 267,681,300        | 5.5%   |
+| SEDG              | 206,885,200        | 184.5% |
+| SPWR              | 782,187,000        | 23.1%  |
+| TERP              | 139,402,800        | -7.2%  |
+| VSLR              | 109,487,900        | 50.0%  |
+
+| All Stocks (2018) |                    |        |
+|-------------------|--------------------|--------|
+|                   |                    |        |
+| Ticker            | Total Daily Volume | Return |
+| AY                | 83,079,900         | -7.3%  |
+| CSIQ              | 200,879,900        | -16.3% |
+| DQ                | 107,873,900        | -62.6% |
+| ENPH              | 607,473,500        | 81.9%  |
+| FSLR              | 478,113,900        | -39.7% |
+| HASI              | 104,340,600        | -20.7% |
+| JKS               | 158,309,000        | -60.5% |
+| RUN               | 502,757,100        | 84.0%  |
+| SEDG              | 237,212,300        | -7.8%  |
+| SPWR              | 538,024,300        | -44.6% |
+| TERP              | 151,434,700        | -5.0%  |
+| VSLR              | 136,539,100        | -3.5%  |
 
 ### The run time of the code seems to have gotten faster with the refactoring. 
 
-### Here are the old code run times for 2017 and 2018:
+### Here are the original code run times for 2017 and 2018:
 
-![OutcomeMonths](./Resources/VBA_Challenge_2017_oldcode.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018_oldcode.png)
+![old2017](./Resources/VBA_Challenge_2017_oldcode.png)          ![old2018](./Resources/VBA_Challenge_2018_oldcode.png)
 
 ### Here are the refactored code run times for 2017 and 2018:
 
-![OutcomeMonths](./Resources/VBA_Challenge_2017.png)          ![OutcomeMonths](./Resources/VBA_Challenge_2018.png) 
+![new2017](./Resources/VBA_Challenge_2017.png)          ![new2018](./Resources/VBA_Challenge_2018.png) 
 
 ### So the refactored code ran 44% faster for 2017 data and 46% faster for 2018 data. These are microscopic amounts of time difference but with a really large data file it could make a big difference in time saved watching the computer spins its wheels.
+
+
+### So what should Steve recommend to his parents? Most of the stocks in 2018 had a negative return. The Return performance was lower in 2018 for all stocks except for RUN and TERP. TERP was slightly better in 2018 but the return was still negative. RUN went from 5.5% return to 84% return. The full performance of all stocks is shown below (2017 in green and 2018 in blue). So Steve may want to recommend RUN stock over DQ stock which dropped from almost 200% return to -63%.
+
+![new2017](./Resources/Returns_Comparison.png)  
