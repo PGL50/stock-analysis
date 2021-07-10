@@ -116,7 +116,7 @@
 ```
 ### The data were formatted into the Excel spreadsheet with color indicators for percent increase (Green) or decrease (Red). A process time was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet.
 
-### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge code.
+### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge 2 code.
 
 | All Stocks (2017) |                    |        |
 |-------------------|--------------------|--------|
