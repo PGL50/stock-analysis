@@ -104,7 +104,7 @@
 
     Next i
 ```
-#### A process time was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet within a nested loop.
+#### A process timer was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet within a nested loop.
 
 #### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge 2 code.
 
