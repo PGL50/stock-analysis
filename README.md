@@ -110,39 +110,7 @@
 
 ### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge 2 code.
 
-| All Stocks (2017) |                    |        |
-|-------------------|--------------------|--------|
-|                   |                    |        |
-| Ticker            | Total Daily Volume | Return |
-| AY                | 136,070,900        | 8.9%   |
-| CSIQ              | 310,592,800        | 33.1%  |
-| DQ                | 35,796,200         | 199.4% |
-| ENPH              | 221,772,100        | 129.5% |
-| FSLR              | 684,181,400        | 101.3% |
-| HASI              | 80,949,300         | 25.8%  |
-| JKS               | 191,632,200        | 53.9%  |
-| RUN               | 267,681,300        | 5.5%   |
-| SEDG              | 206,885,200        | 184.5% |
-| SPWR              | 782,187,000        | 23.1%  |
-| TERP              | 139,402,800        | -7.2%  |
-| VSLR              | 109,487,900        | 50.0%  |
-
-| All Stocks (2018) |                    |        |
-|-------------------|--------------------|--------|
-|                   |                    |        |
-| Ticker            | Total Daily Volume | Return |
-| AY                | 83,079,900         | -7.3%  |
-| CSIQ              | 200,879,900        | -16.3% |
-| DQ                | 107,873,900        | -62.6% |
-| ENPH              | 607,473,500        | 81.9%  |
-| FSLR              | 478,113,900        | -39.7% |
-| HASI              | 104,340,600        | -20.7% |
-| JKS               | 158,309,000        | -60.5% |
-| RUN               | 502,757,100        | 84.0%  |
-| SEDG              | 237,212,300        | -7.8%  |
-| SPWR              | 538,024,300        | -44.6% |
-| TERP              | 151,434,700        | -5.0%  |
-| VSLR              | 136,539,100        | -3.5%  |
+![out2017](./Resources/output_2017.png)             ![out2018](./Resources/output_2018.png) 
 
 ### The run time of the code seems to have gotten faster with the refactoring. 
 
@@ -154,7 +122,7 @@
 
 ![new2017](./Resources/VBA_Challenge_2017.png)          ![new2018](./Resources/VBA_Challenge_2018.png) 
 
-### So the refactored code ran 44% faster for 2017 data and 46% faster for 2018 data. These are microscopic amounts of time difference but with a really large data file it could make a big difference in time saved watching the computer spins its wheels.
+### So the refactored code ran 66% faster for 2017 data and 81% faster for 2018 data. These are microscopic amounts of actual time difference but with a really large data file it could make a big difference in time saved watching the computer spins its wheels.
 
 
 ### So what should Steve recommend to his parents? Most of the stocks in 2018 had a negative return. The Return performance was lower in 2018 for all stocks except for RUN and TERP. TERP was slightly better in 2018 but the return was still negative. RUN went from 5.5% return to 84% return. The full performance of all stocks is shown below (2017 in green and 2018 in blue). So Steve may want to recommend RUN stock over DQ stock which dropped from almost 200% return to -63%.
