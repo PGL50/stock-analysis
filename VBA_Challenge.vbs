@@ -47,40 +47,35 @@ Sub AllStocksAnalysisRefactored()
     Dim tickerStartingPrices(12) As Single
     Dim tickerEndingPrices(12) As Single
     
-    '2a) Create a for loop to initialize the tickerVolumes to zero. 2 methods (For loop and Do While loop)
-    'Do While tickerIndex < 12
-     For tickerIndex = 0 To 11
-        'Use tickerIndex to reference arrays
-        ticker = tickers(tickerIndex)
-        tickerVolumes(tickerIndex) = 0
+    '2a) Create a for loop to initialize the tickerVolumes to zero.
+     For i = 0 To 11
+        tickerVolumes(i) = 0
+     Next i
         
     '2b) Loop over all the rows in the spreadsheet.
         For j = 2 To RowCount
     
             'use these instead of Cells references
-            num = Cells(j, 1).Value
-            numprev = Cells(j - 1, 1).Value
-            numnext = Cells(j + 1, 1).Value
+            tck = Cells(j, 1).Value
+            tckprev = Cells(j - 1, 1).Value
+            tcknext = Cells(j + 1, 1).Value
+            ticker = tickers(tickerIndex)
             
     '3a) Increase volume for current ticker
-            If num = ticker Then
-                tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(j, 8).Value
-            End If
+            tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(j, 8).Value
             
     '3b) Check if the current row is the first row with the selected tickerIndex.
-            If num = ticker And numprev <> ticker Then
+            If tck = ticker And tckprev <> ticker Then
                 tickerStartingPrices(tickerIndex) = Cells(j, 6).Value
             End If
         
     '3c) check if the current row is the last row with the selected ticker
-            If num = ticker And numnext <> ticker Then
+            If tck = ticker And tcknext <> ticker Then
                 tickerEndingPrices(tickerIndex) = Cells(j, 6).Value
+    '3d) Increase the tickerIndex.
+                tickerIndex = tickerIndex + 1
             End If
         Next j
-    '3d) Increase the tickerIndex. 2 methods (For loop-Next and Do While loop-increment)
-'    tickerIndex = tickerIndex + 1
-'    Loop
-    Next tickerIndex
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
     For i = 0 To 11
