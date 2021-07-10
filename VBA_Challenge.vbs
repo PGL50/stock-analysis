@@ -48,7 +48,7 @@ Sub AllStocksAnalysisRefactored()
     Dim tickerEndingPrices(12) As Single
     
     '2a) Create a for loop to initialize the tickerVolumes to zero.
-    For tickerIndex = 0 To 11
+    Do While tickerIndex < 12
         'Use tickerIndex to reference arrays
         ticker = tickers(tickerIndex)
         tickerVolumes(tickerIndex) = 0
@@ -77,7 +77,8 @@ Sub AllStocksAnalysisRefactored()
             End If
         Next j
     '3d) Increase the tickerIndex.
-    Next tickerIndex
+    tickerIndex = tickerIndex + 1
+    Loop
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
     For i = 0 To 11

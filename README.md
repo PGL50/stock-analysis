@@ -61,7 +61,7 @@
 .
 
  '2a) Create a for loop to initialize the tickerVolumes to zero.
-    For tickerIndex = 0 To 11
+    Do While tickerIndex < 12
         'Use tickerIndex to reference arrays
         ticker = tickers(tickerIndex)
         tickerVolumes(tickerIndex) = 0
@@ -94,15 +94,12 @@
             End If
         Next j
 ```
-### I used tickerIndex as the looping variable for the outer loop (see above 2a) so in the instructions where it said to increase the tickerIndex, the "Next tickerIndex" code line does that automatically.
+### I used tickerIndex as the looping variable for a Do While loop (see above 2a) so in the instructions where it said to write script to increase the tickerIndex I used the code "tickerIndex = tickerIndex + 1". Otherwise, in a for loop the code would be "Next tickerIndex".
 
 ```VB
- For tickerIndex = 0 To 11
-.
-.
-.
-.
-Next tickerIndex
+    '3d) Increase the tickerIndex.
+    tickerIndex = tickerIndex + 1
+    Loop
 ```
 ### The final values for volume, start and end price were entered into their arrays within a loop.
 
@@ -178,5 +175,7 @@ Next tickerIndex
 
 ### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and take a long time.
 
-### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start agian. 
+### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. 
+
+### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed.
 
