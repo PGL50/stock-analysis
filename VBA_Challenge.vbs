@@ -47,7 +47,7 @@ Sub AllStocksAnalysisRefactored()
     Dim tickerStartingPrices(12) As Single
     Dim tickerEndingPrices(12) As Single
     
-    '2a) Create a for loop to initialize the tickerVolumes to zero.
+    '2a) Create a for loop to initialize the tickerVolumes to zero. 2 methods (For loop and Do While loop)
     'Do While tickerIndex < 12
      For tickerIndex = 0 To 11
         'Use tickerIndex to reference arrays
@@ -77,7 +77,7 @@ Sub AllStocksAnalysisRefactored()
                 tickerEndingPrices(tickerIndex) = Cells(j, 6).Value
             End If
         Next j
-    '3d) Increase the tickerIndex.
+    '3d) Increase the tickerIndex. 2 methods (For loop-Next and Do While loop-increment)
 '    tickerIndex = tickerIndex + 1
 '    Loop
     Next tickerIndex
