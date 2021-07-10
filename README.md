@@ -63,7 +63,7 @@
      Next i
 ```
 
-#### The values in the arrays (tickerVolume, tickerStartingPrices and tickerEndingPrices) were updated within a For loop cycling through all of the rows of data. The value of tickerIndex was used to index the arrays. The Starting and Ending prices were determined by comparing the ticker value with the previous or next value. Text replacement was also used to make the Cells references in the loop code more readable. In step 3c) then If Then statement checks if the current row is the last one of the ticker group. When the last ticker of a group was indentified, the tickerIndex was incremented by 1. The original code had nested For loops that assigned the values within the inner loop. 
+#### The values in the arrays (tickerVolume, tickerStartingPrices and tickerEndingPrices) were updated within a For loop cycling through all of the rows of data. The value of tickerIndex was used to index the arrays. The Starting and Ending prices were determined by comparing the ticker value with the previous or next value. Text replacement was also used to make the Cells references in the loop code more readable. In step 3c) the If Then statement checks if the current row is the last one of the ticker group. When the last ticker of a group was indentified, the tickerIndex was incremented by 1. The original code had nested For loops that assigned the values within the inner loop. 
 
 ```VB
     '2b) Loop over all the rows in the spreadsheet.
@@ -132,7 +132,7 @@
 
 #### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and take a long time.
 
-#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use or arrays to store the final numbers resulted in more faster code.
+#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use or arrays to store the final numbers resulted in much faster code.
 
 #### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed.
 
