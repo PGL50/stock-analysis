@@ -171,7 +171,7 @@
 
 ## Summary
 
-### The bigget advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses thes can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. Refactoring in an iterative process is a great learning tool as well. 
+### The bigget advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses these can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. Refactoring in an iterative process is a great learning tool as well. 
 
 ### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and take a long time.
 
