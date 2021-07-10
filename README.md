@@ -130,9 +130,9 @@
 
 #### The biggest advantage of refactoring code is starting from code that works. As new techniques are learned they can be implemented and tested. If the code requires new analyses these can be added knowing that the baseline code already works. Testing the performance of the code before and after refactoring can be a good measure of efficiency of the code. Refactoring in an iterative process is a great learning tool as well. 
 
-#### If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and take a long time.
+#### There are some disadvatages to refactoring code. If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and require longer coding time to get it working correctly.
 
-#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use or arrays to store the final numbers resulted in much faster code.
+#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use of arrays to store the final numbers resulted in much faster code.
 
-#### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed.
+#### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed. Adding the Debug.print line (gleaned from Office hours) helped to correct the code.
 
