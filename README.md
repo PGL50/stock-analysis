@@ -138,7 +138,7 @@
 
 #### There are some disadvatages to refactoring code. If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and require longer coding time to get it working correctly.
 
-#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use of arrays to store the final numbers resulted in much faster code. The refactored code only looped throuth the rows one time. This was the real time saver.
+#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use of arrays to store the final numbers resulted in much faster code. The refactored code only looped through the rows one time. This was the real time saver.
 
 #### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed. Adding the Debug.print line (gleaned from Office hours) helped to correct the code.
 
