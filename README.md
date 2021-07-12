@@ -6,6 +6,8 @@
 
 ## Results
 
+### Code analysis
+
 #### The data for these analyses are lists of Stock Tickers with daily values for Open, High, Low, Close, and Volume for 2017 and 2018. Steve wants to get some aggregated data for all stocks to compare the performance of various green stocks. The analyses used refactored code from the Module 2 steps. The performance time between years and code versions is also compared.
 
 #### The macro AllStocksAnalysisRefactored() utilized arrays instead of nested loops in the original code. Below are code snippets examples for new techniques and refactoring. The first code block used Cells vs Range to create title and headers for the analysis results.
@@ -106,6 +108,8 @@
 ```
 #### A process timer was opened at the beginning of the code and closed at the end of the code and a message pop up box with the process time for each year was displayed. The biggest difference in the refactored code was the use of arrays to store the data instead of displaying the data immediately to the final spreadsheet within a nested loop.
 
+### Process time analysis
+
 #### The refactored code yielded the same results as the original code from Module 2. Here are the results from the Challenge 2 code.
 
 ![out2017](./Resources/output_2017.png)             ![out2018](./Resources/output_2018.png) 
@@ -122,6 +126,8 @@
 
 #### So the refactored code ran 66% faster for 2017 data and 81% faster for 2018 data. These are microscopic amounts of actual time difference but with a really large data file it could make a big difference in time saved watching the computer spins its wheels.
 
+### Stock return analysis
+
 #### So what should Steve recommend to his parents? Most of the stocks in 2018 had a negative return. The Return performance was lower in 2018 for all stocks except for RUN and TERP. TERP was slightly better in 2018 but the return was still negative. RUN went from 5.5% return to 84% return. The full performance of all stocks is shown below (2017 in green and 2018 in blue). So Steve may want to recommend RUN stock over DQ stock which dropped from almost 200% return to -63%.
 
 ![comparisons](./Resources/Returns_Comparison.png)  
@@ -132,7 +138,7 @@
 
 #### There are some disadvatages to refactoring code. If the original code works but is not giving correct output, the problems can be propagated every time the code is reused. If someone is not familiar with the original code it may be hard to refactor it and require longer coding time to get it working correctly.
 
-#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use of arrays to store the final numbers resulted in much faster code.
+#### So for this Module 2 and Challenge, I found the refactoring really informative. The Module tutorials really helped to see how the code evolved and changed when a new feature was needed. If something didn't work I could return to code that did and start again. The use of arrays to store the final numbers resulted in much faster code. The refactored code only looped throuth the rows one time. This was the real time saver.
 
 #### Some of the difficulty with refactoring using starter code for Challenge 2 was changing to arrays. I think from the perfomance times it sped up the run time but took a bit of trial and error to get it right. So extra time to add new code and features was needed. Adding the Debug.print line (gleaned from Office hours) helped to correct the code.
 
